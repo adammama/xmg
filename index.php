@@ -1,1 +1,3 @@
 <?php
+//mcw framework
+phpinfo();

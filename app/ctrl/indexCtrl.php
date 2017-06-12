@@ -1,14 +1,15 @@
 <?php
 namespace app\ctrl;
 
-class indexCtrl
+class indexCtrl extends \core\core
 {
     public function index()
     {
-        p('it is index');
-        $model=new \core\lib\model();
-        $sql='select * from m_menu';
-        $ret=$model->query($sql);
-        p($ret->fetchAll());
+        $temp= new \core\lib\model();
+        $data='hello world!';
+        $title='视图文件';
+        $this->assign('title', $title);
+        $this->assign('data', $data);
+        $this->display('index.html');
     }
 }

@@ -1,6 +1,8 @@
 <?php
 namespace core\lib;
 
+use core\lib\config;
+
 class route
 {
     public $ctrl;
@@ -18,7 +20,7 @@ class route
                 $this->action=$patharr[1];
                 unset($patharr[1]);
             } else {
-                $this->action='index';
+                $this->action=config::get('ACTION', 'route');
             }
             //处理参数
             $count=count($patharr)+2;
@@ -30,8 +32,8 @@ class route
                 $i=$i+2;
             }
         } else {
-            $this->ctrl='index';
-            $this->action='index';
+            $this->ctrl=config::get('CTRL', 'route');
+            $this->config::get('ACTION', 'route');
         }
     }
 }

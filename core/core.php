@@ -7,6 +7,7 @@ class core
     public $assign;
     public static function run()
     {
+        \core\lib\log::init();
         $route= new \core\lib\route();
         $ctrlClass=$route->ctrl;
         $action=$route->action;
@@ -16,6 +17,7 @@ class core
             include $ctrlfile;
             $ctrl=new $cltrlClass();
             $ctrl->$action();
+            \core\lib\log::log('ctrl:'.$ctrlClass.'    action:'.$action);
         } else {
             throw new \Exception('找不控制器'.$ctrlClass);
         }

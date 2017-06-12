@@ -1,0 +1,9 @@
+{
+    "name": "XMG PHP",
+    "description": "XMG PHP Framework",
+    "authors": [{
+        "name": "mcwen",
+        "email": "mcwen@sohu.com"
+    }],
+    "require": {}
+}

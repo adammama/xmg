@@ -2,6 +2,6 @@
 return array(
     'DRIVER'=>'file',
     'OPTION'=>[
-        'PATH'=>XMG.'/log/'
+        'PATH'=>XMG.'/runtime/log/'
     ]
 );

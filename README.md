@@ -8,6 +8,7 @@ index.php
 core/core.php
 core/lib/
 
+
 #框架函数库
 core/common/function.php
 
@@ -18,4 +19,10 @@ core/config
 app/
 
 #框架运行时
-log/
+runtime/
+
+#框架上传目录
+uploads/
+
+#框架静态文件目录
+public/

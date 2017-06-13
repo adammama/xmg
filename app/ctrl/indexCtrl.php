@@ -12,15 +12,15 @@ class indexCtrl extends \core\core
         $title='视图文件';
         $this->assign('title', $title);
         $this->assign('data', $data);
-        $this->display('index.html');
+        $this->display('index/index.html');
     }
     public function test()
     {
-    	
-    	$data='test!';
-    	$title='abc';
-    	$this->assign('title', $title);
-    	$this->assign('data', $data);
-    	$this->display('test.html');
+        
+        $data='test!';
+        $title='abc';
+        $this->assign('title', $title);
+        $this->assign('data', $data);
+        $this->display('index/test.html');
     }
 }

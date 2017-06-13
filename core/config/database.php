@@ -1,6 +1,11 @@
 <?php
 return array(
-        'DSN'=>'mysql:host=127.0.0.1;dbname=myrhb',
-        'USERNAME'=>'root',
-        'PASSWORD'=>'root',
+
+		'database_type' => 'mysql',
+		'database_name' => 'test',
+		'server' => '127.0.0.1',
+		'username' => 'root',
+		'password' => 'root',
+		'charset' => 'utf8',
+		'port' => 3306		
 );

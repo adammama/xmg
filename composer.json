@@ -1,13 +1,14 @@
 {
-    "name": "XMG PHP",
-    "description": "XMG PHP Framework",
-    "authors": [{
-        "name": "mcwen",
-        "email": "mcwen@sohu.com"
-    }],
-    "require": {
-        "php": ">=5.3.0",
-        "filp/whoops": "*",
-        "symfony/var-dumper": "*"
-    }
+	"name": "XMG PHP",
+	"description": "XMG PHP Framework",
+	"authors": [{
+		"name": "mcwen",
+		"email": "mcwen@sohu.com"
+	}],
+	"require": {
+		"php": ">=5.5.9",
+		"filp/whoops": "*",
+		"symfony/var-dumper": "*",
+		"catfan/Medoo": "*"
+	}
 }

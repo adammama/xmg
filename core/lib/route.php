@@ -33,7 +33,7 @@ class route
             }
         } else {
             $this->ctrl=config::get('CTRL', 'route');
-            $this->config::get('ACTION', 'route');
+            $this->action=config::get('ACTION', 'route');
         }
     }
 }

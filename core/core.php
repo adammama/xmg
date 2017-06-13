@@ -43,10 +43,20 @@ class core
     }
     public function display($file)
     {
-        $file=APP.'/views/'.$file;
-        if (is_file($file)) {
-            extract($this->assign);
-            include $file;
+        $filepath=APP.'/views/'.$file;
+        if (is_file($filepath)) {
+            //extract($this->assign);
+            //include $file;  
+            $loader = new \Twig_Loader_Filesystem(APP.'/views');
+            $twig = new \Twig_Environment($loader, array(
+            		'cache' => XMG.'/log/twig',
+            		'debug'=>DEBUG
+            ));
+            //$template = $twig->load('index.html');
+            $template=$twig->loadTemplate($file);
+            //$template->render($this->assign);
+            $template->display($this->assign?$this->assign:array());
+            
         }
     }
 }

@@ -1,14 +1,14 @@
 <?php
 namespace app\ctrl;
 
-use core\lib\model;
+use app\model\testModel;
 
 class indexCtrl extends \core\core
 {
     public function index()
     {
-    	$model=new model();
-    	$ret=$model->select("test","*");
+    	$model=new testModel();
+    	$ret=$model->delOne(3);
     	dump($ret);
         $data='hello world!';
         $title='视图文件';

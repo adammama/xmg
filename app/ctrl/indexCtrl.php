@@ -2,8 +2,9 @@
 namespace app\ctrl;
 
 use app\model\testModel;
+use core\core;
 
-class indexCtrl extends \core\core
+class indexCtrl extends core
 {
     public function index()
     {
